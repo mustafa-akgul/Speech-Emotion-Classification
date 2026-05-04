@@ -48,7 +48,3 @@ Supported emotion labels (Turkish and English): `Notr/Nötr`, `Mutlu`, `Öfkeli/
 ### Feature Importance (Top 25)
 ![Feature Importance](feature_importance.png)
 
-## Group 9
-
-Ahmet Akin · Berivan Demir · Mustafa Talha Akgul  
-BIL216 — Istanbul University, 2025–2026 Spring
