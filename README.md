@@ -41,8 +41,3 @@ Supported emotion labels (Turkish and English): `Notr/Nötr`, `Mutlu`, `Öfkeli/
 | Macro F1 | 0.626 |
 | Best class | Sad (F1 = 0.839) |
 | Hardest pair | Angry ↔ Happy |
-
-## Group 9
-
-Ahmet Akin · Berivan Demir · Mustafa Talha Akgul  
-BIL216 — Istanbul University, 2025–2026 Spring
