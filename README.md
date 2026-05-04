@@ -23,9 +23,9 @@ python emotion_classifier.py
 ```
 
 Outputs written to the working directory:
-- `group9_phase1_results.csv` — per-file predictions
-- `group9_phase1_confusion_matrix.png`
-- `group9_phase1_feature_importance.png`
+- `results.csv` — per-file predictions
+- `confusion_matrix.png`
+- `feature_importance.png`
 
 ## Dataset Format
 
@@ -33,7 +33,7 @@ Filename convention: `G<group>_D<speaker>_<gender>_<age>_<emotion>_C<quality>.wa
 
 Supported emotion labels (Turkish and English): `Notr/Nötr`, `Mutlu`, `Öfkeli/Ofkeli`, `Üzgün/Uzgun`, `Şaşkın/Saskin`, `Neutral`, `Happy`, `Angry`, `Sad`, `Surprised`, `Furious`, `Shocked`
 
-## Results (Phase 1)
+## Results
 
 | Metric | Value |
 |---|---|
@@ -41,3 +41,14 @@ Supported emotion labels (Turkish and English): `Notr/Nötr`, `Mutlu`, `Öfkeli/
 | Macro F1 | 0.626 |
 | Best class | Sad (F1 = 0.839) |
 | Hardest pair | Angry ↔ Happy |
+
+### Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
+
+### Feature Importance (Top 25)
+![Feature Importance](feature_importance.png)
+
+## Group 9
+
+Ahmet Akin · Berivan Demir · Mustafa Talha Akgul  
+BIL216 — Istanbul University, 2025–2026 Spring
