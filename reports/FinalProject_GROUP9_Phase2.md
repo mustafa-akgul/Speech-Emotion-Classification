@@ -144,7 +144,7 @@ RandomizedSearch with 20 samples gives ~95% probability of landing in the top 5%
 
 ### 5.1 Feature Importance
 
-![Top-30 Feature Importances — Phase 2 RandomForest (135-dim)](group9_phase2_feature_importance.png)
+![Top-30 Feature Importances — Phase 2 RandomForest (135-dim)](../phase2/results/feature_importance.png)
 
 The top of the ranking is dominated by **Δ-MFCC coefficients** (dMFCC_2_mean is the single most important feature, followed by dMFCC_2_std, dMFCC_5_mean, dMFCC_4_mean, dMFCC_7_mean, dMFCC_3_mean). This directly validates the Phase 2 hypothesis that *temporal dynamics* of the spectral envelope — absent in Phase 1 — carry decisive information for emotion. **Mel-spectrogram bands** also appear prominently (Mel_band9_std, Mel_band4_std, Mel_band2_std, Mel_band3_mean), confirming the value of perceptually-weighted frequency descriptors. Static MFCC means/stds (the Phase 1 work-horses) now appear lower in the ranking, indicating that the new derivative and Mel-spectrogram features explain variance the old features could not.
 
@@ -158,7 +158,7 @@ The expected acoustic profiles in Table 4.2 of the Phase 1 report (high F0 + hig
 
 ### 6.1 Phase 1 vs. Phase 2 — Model Comparison
 
-![Phase 1 vs Phase 2 Accuracy Comparison](group9_phase2_vs_phase1.png)
+![Phase 1 vs Phase 2 Accuracy Comparison](../phase2/results/phase1_vs_phase2.png)
 
 | Model | Feature dims | Test Accuracy | Δ vs. Phase 1 |
 |---|---:|---:|---:|
@@ -185,19 +185,19 @@ The most dramatic improvement vs. Phase 1 is **surprised recall: 0.333 → 0.778
 
 ### 6.3 Confusion Matrix — Ensemble
 
-![Confusion Matrix — Soft-Voting Ensemble](group9_phase2_cm_ensemble.png)
+![Confusion Matrix — Soft-Voting Ensemble](../phase2/results/cm_ensemble.png)
 
 Of 131 test samples, 117 are classified correctly (89.3%). The single largest off-diagonal block is **3 surprised → happy** (likely because surprised onsets share a rising-pitch profile with cheerful exclamations) and **4 neutral → happy** (a known difficulty: subdued enthusiasm vs. flat narration). All other off-diagonals are ≤ 2 samples.
 
 ### 6.4 Normalised Confusion Heatmap
 
-![Normalised Confusion Matrix — Phase 2 Ensemble](group9_phase2_heatmap.png)
+![Normalised Confusion Matrix — Phase 2 Ensemble](../phase2/results/heatmap.png)
 
 Diagonal recalls (normalised): **angry 0.91, happy 0.96, neutral 0.86, sad 0.94, surprised 0.78**. Compare to Phase 1 where *surprised* sat at 0.33 — the addition of Δ-MFCC and Mel-spectrogram features is the decisive ingredient that lifted this class.
 
 ### 6.5 Random-Forest-Only Comparison
 
-![Confusion Matrix — RF Phase 2 Tuned](group9_phase2_cm_rf.png)
+![Confusion Matrix — RF Phase 2 Tuned](../phase2/results/cm_rf.png)
 
 The Phase-2 RF alone reaches 81.7% — substantially better than Phase 1 RF (62.6%) thanks to the 135-dim feature set, but ~8 pp below the ensemble. The largest gap is on *happy* (RF recall 0.857 vs. ensemble 0.964), where MLP's non-linear decision surface complements RF's tree splits.
 

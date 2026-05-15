@@ -231,7 +231,7 @@ The dataset is split **80% training / 20% test** using stratified sampling to pr
 
 The figure below shows the 25 most important features ranked by the Random Forest's mean decrease in impurity (Gini importance).
 
-![Feature Importance](group9_phase1_feature_importance.png)
+![Feature Importance](../phase1/results/feature_importance.png)
 
 **Key observations:**
 
@@ -281,7 +281,7 @@ The confusion between **Angry** and **Happy** (both high-arousal) and between **
 
 ### 5.3 Confusion Matrix
 
-![Confusion Matrix](group9_phase1_confusion_matrix.png)
+![Confusion Matrix](../phase1/results/confusion_matrix.png)
 
 The confusion matrix reveals the following patterns:
 
