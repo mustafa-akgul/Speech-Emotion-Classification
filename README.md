@@ -122,8 +122,3 @@ All three base learners are independently tuned with `RandomizedSearchCV` (20 / 
 │   └── FinalProject_GROUP9_Phase2.{md,pdf}
 └── README.md
 ```
-
-## Group 9
-
-Ahmet Akin · Berivan Demir · Mustafa Talha Akgul
-BIL216 — Istanbul University, 2025–2026 Spring
