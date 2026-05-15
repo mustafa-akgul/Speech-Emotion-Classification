@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+
+# Dataset (too large, regenerate from Midterm Project)
+Midterm_Dataset_2026/
+
+# Course instructions (not part of deliverable)
+finalProjectInstruction.md
+Instruction.md

@@ -1,0 +1,4 @@
+model,test_accuracy
+RF_tuned,0.816793893129771
+MLP_tuned,0.8931297709923665
+Ensemble,0.8931297709923665
